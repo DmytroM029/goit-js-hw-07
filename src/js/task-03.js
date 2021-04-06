@@ -24,7 +24,7 @@ const includeUlEl = document.querySelector('#gallery');
 
 
 
-const makeElImage = image => {return `<li><img src ="${image.url}" alt ="${image.alt}" width="100px"/></li>`; };
+const makeElImage = ({url, alt}) => {return `<li><img src ="${url}" alt ="${alt}" width="320px"/></li>`; };
 
 const itemUlEl = images.map(makeElImage).join('');
 
