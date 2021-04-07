@@ -8,4 +8,18 @@ const onFormSubmit = (event) => {
     }
     return outputTextForm.textContent = event.currentTarget.value 
 };
-inputTextForm.addEventListener('change', onFormSubmit);
+inputTextForm.addEventListener('input', onFormSubmit);
+
+
+// const inputTextForm = document.querySelector('#name-input');
+// const outputTextForm = document.querySelector('#name-output');
+
+// const onFormSubmit = () => {
+//     const textIns = inputTextForm.value.trim().length;
+//         // event.preventDefault();
+//     if (textIns === 0) {
+//         return outputTextForm.textContent = 'незнакомец';
+//     }
+//     return outputTextForm.textContent = inputTextForm.value;
+// };
+// inputTextForm.addEventListener('input', onFormSubmit);
